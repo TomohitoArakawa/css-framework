@@ -1,0 +1,25 @@
+{
+  "name": "css-framework",
+  "version": "1.0.0",
+  "description": "This repository is use the SC5 styleguide.",
+  "main": "index.js",
+  "scripts": {
+    "styleguide": "node node_modules/sc5-styleguide/bin/styleguide --kssSource sass/*.scss --styleSource public/*.css --output styleguide --overviewPath overview.md --watch --server",
+    "compile-sass": "node-sass --include-path sass sass/*.scss public/*.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomohitoArakawa/css-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomohitoArakawa/css-framework/issues"
+  },
+  "homepage": "https://github.com/TomohitoArakawa/css-framework#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "sc5-styleguide": "^2.0.4"
+  }
+}

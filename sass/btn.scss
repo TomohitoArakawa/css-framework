@@ -1,0 +1,32 @@
+/*
+Button
+
+ボタンコンポーネントです。
+
+.btn - 基本スタイル
+.btn:hover - ホバースタイル
+.btn.primary - プライマリースタイル
+.btn.delete - 削除スタイル
+
+markup:
+<button class="btn {$modifiers}">ボタンのテキスト</button>
+
+Styleguide 1.0.0 -- 1
+*/
+
+.btn {
+  padding: 0.5em 1em;
+  border: none;
+  -webkit-appearance: none;
+  &:hover {
+    opacity: 0.6;
+  }
+  &.primary {
+    background-color: skyblue;
+    color: #fff;
+  }
+  &.delete {
+    background-color: red;
+    color: #fff;
+  }
+}
